@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t srihachi/docker-react -f Delivery-dev .
+  - docker build -t srihachi/docker-react -f Dockerfile-dev .
 
 script:
   - docker run srihachi/docker-react npm run test -- --coverage
